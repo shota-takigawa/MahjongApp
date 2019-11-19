@@ -1,10 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar
-      app
-      color="primary"
-      dark
-    >
+    <v-app-bar app color="primary" dark class="mb-12" xs12>
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
@@ -28,24 +24,22 @@
       <v-spacer></v-spacer>
     </v-app-bar>
 
-    <v-content>
-      <HelloWorld/>
-    </v-content>
+    <router-view></router-view>
   </v-app>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld';
-
 export default {
-  name: 'App',
+  name: "App",
 
-  components: {
-    HelloWorld,
-  },
+  components: {},
 
   data: () => ({
     //
-  }),
+  })
 };
 </script>
+
+<style scoped>
+
+</style>
