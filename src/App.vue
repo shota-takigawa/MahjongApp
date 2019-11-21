@@ -1,6 +1,6 @@
 <template>
   <v-app>
-    <v-app-bar app color="primary" dark class="mb-12" xs12>
+    <v-app-bar app color="primary" dark class="mb-12">
       <div class="d-flex align-center">
         <v-img
           alt="Vuetify Logo"
@@ -9,6 +9,7 @@
           src="https://cdn.vuetifyjs.com/images/logos/vuetify-logo-dark.png"
           transition="scale-transition"
           width="40"
+          @click="goToHome()"
         />
 
         <v-img
@@ -36,7 +37,12 @@ export default {
 
   data: () => ({
     //
-  })
+  }),
+  methods: {
+    goToHome() {
+      this.$router.push("/")
+    }
+  }
 };
 </script>
 
