@@ -79,6 +79,7 @@ export default {
       style: ["サンマ", "ヨンマ", "サンマ(4人)"],
       uma: ["15/5", "20/0", "0"],
       config: [],
+      //style,tip,betMoney,flyingPrice,oneUma,twoUma
       configUma: [],
       dialog: false,
       oneUma: 0,
