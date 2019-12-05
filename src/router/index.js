@@ -2,6 +2,7 @@ import Vue from "vue";
 import VueRouter from "vue-router";
 import Home from "../views/Home.vue";
 import Config from "../views/Config.vue";
+import Preset from "../views/Preset.vue";
 import Play from "../views/Play.vue";
 
 Vue.use(VueRouter);
@@ -27,9 +28,14 @@ const routes = [
     component: Config
   },
   {
-    path: "/play",
+    path: "/play", //presetの子として登録したい
     name: "play",
     component: Play
+  },
+  {
+    path: "/preset",
+    name: "preset",
+    component: Preset
   }
 ];
 

@@ -59,7 +59,7 @@
                     キャンセル
                   </v-btn>
 
-                  <v-btn color="green darken-1" text @click="goPlay()">
+                  <v-btn color="green darken-1" text @click="goPreset()">
                     保存
                   </v-btn>
                 </v-card-actions>
@@ -99,9 +99,9 @@ export default {
         this.config.twoUma = 0;
       }
     },
-    goPlay() {
+    goPreset() {
       this.dialog = false;
-      this.$router.push("/play");
+      this.$router.push("/preset");
       //対局開始への遷移、configのstoreへの保管
     }
   }
